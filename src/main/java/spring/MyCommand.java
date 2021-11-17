@@ -2,7 +2,7 @@ package spring;
 
 import org.springframework.stereotype.Component;
 
-@Component(value = "hehe")
+@Component
 public class MyCommand implements Command {
 
     public void init() {
