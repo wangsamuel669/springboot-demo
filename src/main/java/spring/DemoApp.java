@@ -10,5 +10,7 @@ public class DemoApp {
     public static void main(String[] args) {
         ConfigurableApplicationContext run = new SpringApplicationBuilder(DemoApp.class)
                 .run(args);
+        SubTest bean = run.getBean(SubTest.class);
+        bean.a();
     }
 }
